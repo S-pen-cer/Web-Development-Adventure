@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment Details</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="Travel_ScriptSources.js"></script>
+</head>
+<body>
+	<form class="card">
+		<label for "customer title">Title</label>
+		<select id = "customer title">
+			<option value = "Mr.">Mr.</option>
+			<option value = "Ms.">Ms.</option>
+			<option value = "Mstr.">Mstr.</option>
+			<option value = "Mrs.">Mrs.</option>
+			<option value = "Mx.">Mx.</option>
+		</select>
+		<br>
+	
+		<label for = "customer name">Full Name</label>
+		<input type = "text" id = "customer name" minlength = "8" maxlength = "20" required>
+		<br>
+
+		<label for = "promo-codes">Promotion Codes</label>
+		<input type = "password" id = "promo-codes">
+		<br>
+		
+		<label for = "user email contact">Email Address</label>
+		<input type = "email" id = "user email contact">
+		<br>
+		
+		<label for = "user contact number">Telephone or Mobile Number</label>
+		<input type = "tel" id = "user contact number">
+		<br>
+		
+		<label for = "package quantity">Number of Packages</label>
+		<input type = "number" id = "package quantity" min = "0" >
+		<br>
+		
+		<label for = "date of birth"></label>
+		<input type = "date" id = "date of birth">
+		<br>
+		
+		<label for = "payment method">Select Payment Method</label>
+		<br>
+		<label for = "payment method 1">Visa</label>
+		<input type = "radio" id = "payment method 1" value = "Visa">
+		
+		<label for = "payment method 2">MasterCard</label>
+		<input type = "radio" id = "payment method 2" value = "MasterCard">
+				
+		<label for = "payment method 3">Gift Certificate</label>
+		<input type = "radio" id = "payment method 3" value = "Gift Certificate">
+		<br>
+
+		<button style = "border-radius: 10px;" onclick = "showAlert2();">Submit Order</button>
+		<br>
+		
+		<input type = "reset">
+		<br>
+		
+		<a href = "C:\Program Files\Notepad++\NewTravelPackages.html">
+			<button style = "border-radius: 10px;">Return to Travel Packages</button>
+		</a>
+		<br>
+		
+		
+		
+	</form>
+</body>
+<script>
+	function showAlert2(){
+		alert ("Order received.");
+	}
+</script>
+</html>
